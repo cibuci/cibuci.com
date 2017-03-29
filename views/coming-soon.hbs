@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="/css/skeleton/normalize.css">
   <link rel="stylesheet" href="/css/skeleton/skeleton.css">
+  <link rel="stylesheet" href="/css/animate.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,6 +37,35 @@
 <body>
 <img src="/images/ey-macarena.gif" alt="" height="200" style="margin-top:100px;">
 <h1>即将到来 - 辞不辞</h1>
-<p>What would you do if you weren't afraid?</p>
+<p id="slogan" class="animated fadeInUp">What would you do if you weren't afraid?</p>
 </body>
+<script type="text/javascript">
+  var slogans = [
+    '放下你的不开心……',
+    '做喜欢的事不需要坚持。',
+    '一个工作生活创业的内容社区，帮助你找回梦想，实践兴趣。',
+    '苟活一生 or 偏执一世 ?',
+    '帮你辞去工作中的烦恼。',
+    '享受工作。',
+    '有一种工作叫生活。',
+    '辞去烦忧，追逐梦想。',
+    'What would you do if you weren\'t afraid?',
+  ];
+
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  var slogan = document.getElementById('slogan');
+  var parent = slogan.parentNode;
+
+  setInterval(function() {
+    var index = getRandomInt(0, slogans.length);
+    slogan.innerHTML = slogans[index];
+    parent.removeChild(slogan);
+    parent.appendChild(slogan);
+  }, 3000);
+</script>
 </html>
