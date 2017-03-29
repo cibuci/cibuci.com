@@ -23,7 +23,8 @@ app.use(hbs.middleware({
   partialsPath: __dirname + '/views/partials',
   templateOptions: {
     helpers: require('handlebars-helpers')()
-  }
+  },
+  disableCache: true
 }));
 
 // logger
