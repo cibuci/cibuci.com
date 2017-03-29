@@ -8,9 +8,9 @@ router.get('/', async function (ctx, next) {
   });
 })
 
-router.get('/foo', async function (ctx, next) {
-  await ctx.render('index', {
-    title: 'koa2 foo'
+router.get('/coming-soon', async function (ctx, next) {
+  await ctx.render('coming-soon.hbs', {
+    title: '即将到来'
   });
 });
 

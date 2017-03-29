@@ -20,16 +20,15 @@ app.use(require('koa-static')(__dirname + '/public'));
 
 
 app.use(views(__dirname+ '/views', {
-    map: { hbs: 'handlebars' },
-    options: {
-      /*helpers: {
-        uppercase: (str) => str.toUpperCase()
-      },
-      partials: {
-        subTitle: './my-partial' // requires ./my-partial.hbs
-      }*/
+  extension: 'hbs',
+  map: { hbs: 'handlebars' },
+  options: {
+    helpers: require('handlebars-helpers')(),
+    partials: {
+      test: 'partials/test'
     }
-  }));
+  }
+}));
 
 // logger
 app.use(async (ctx, next) => {
