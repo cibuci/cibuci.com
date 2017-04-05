@@ -1,0 +1,22 @@
+{
+  "name": "cibuci",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Wayne <evilcome.com@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cibuci/cibuci.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
