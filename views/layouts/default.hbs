@@ -13,7 +13,7 @@
   {{#if page.meta_description}}
     <meta name="description" content="{{page.meta_description}}">
   {{else}}
-    <meta name="description" content="辞不辞，一个帮助大家实践兴趣和梦想的社区。这里有招聘信息、交流活动、创业资源、招聘信息；这里有志同道合的人；这里有别人的故事，也将有你的故事。">
+    <meta name="description" content="辞不辞，一个帮助大家实践兴趣和梦想的社区。这里有招聘信息、交流活动、创业资源；这里有志同道合的人；这里有别人的故事，也将有你的故事。">
   {{/if}}
   {{#if page.meta_keywords}}
     <meta name="keywords" content="{{page.meta_keywords}}">
@@ -32,10 +32,11 @@
 
   <link rel="stylesheet" href="/css/dist/main.css">
 
+
+  {{> google-analytics}}
 </head>
 <body>
   {{{body}}}
 
-  {{> google-analytics}}
 </body>
 </html>
