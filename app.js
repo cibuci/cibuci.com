@@ -21,6 +21,8 @@ app.use(require('koa-static')(__dirname + '/public'));
 app.use(hbs.middleware({
   viewPath: __dirname + '/views',
   partialsPath: __dirname + '/views/partials',
+  layoutsPath: __dirname + '/views/layouts',
+  defaultLayout: 'default',
   templateOptions: {
     helpers: require('handlebars-helpers')()
   },

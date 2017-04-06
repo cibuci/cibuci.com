@@ -1,1 +1,9 @@
 @import "bootstrap-custom";
+
+header {
+  border-bottom: 1px solid $gray-lighter;
+}
+
+.navbar-cbc {
+  margin-bottom: 0;
+}

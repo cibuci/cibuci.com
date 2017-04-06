@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Title, Description and Keywords -->
+  {{#if page.titile}}
+    <title>{{page.title}} - {{page.tagline}}</title>
+  {{else}}
+    <title>辞不辞 - 一句话口号</title>
+  {{/if}}
+  {{#if page.meta_description}}
+    <meta name="description" content="{{page.meta_description}}">
+  {{else}}
+    <meta name="description" content="辞不辞，一个帮助大家实践兴趣和梦想的社区。这里有招聘信息、交流活动、创业资源、招聘信息；这里有志同道合的人；这里有别人的故事，也将有你的故事。">
+  {{/if}}
+  {{#if page.meta_keywords}}
+    <meta name="keywords" content="{{page.meta_keywords}}">
+  {{else}}
+    <meta name="keywords" content="C站,辞职,自由职业,创业,兴趣,梦想,活动,招聘,毒鸡汤">
+  {{/if}}
+
+  <meta name="renderer" content="webkit">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <link rel="stylesheet" href="/css/dist/main.css">
+
+</head>
+<body>
+  {{{body}}}
+
+  {{> google-analytics}}
+</body>
+</html>
