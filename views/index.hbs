@@ -1,9 +1,47 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>{{title}}</title>
-</head>
-<body>
-{{title}}
-</body>
-</html>
+{{> header}}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <i>banner 特殊展柜<i/>
+
+      <hr />
+
+      <i>小标题</i>
+      <ul>
+        <li>遇见·自己</li>
+        <li>种草·拔草</li>
+        <li>匠人·匠心</li>
+      </ul>
+
+      <hr />
+
+      <i>文章列表</i>
+      <ul>
+        {{#each list}}
+          <div class="">
+            <h5>{{title}}</h5>
+            来源：<a href="{{source}}" target="_blank">{{sourceName}}</a>
+            <p>{{summary}}</p>
+            <p><span>{{stats.view}}</span> | <span>{{stats.comment}}</span> | <span>{{stats.love}}</span></p>
+            <img src="{{cover}}" alt="" width="200">
+            <hr />
+          </div>
+        {{/each}}
+      </ul>
+    </div>
+    <!-- <div class="col-md-4">
+      <i>边栏<i/>
+
+      <hr />
+
+      <i>banner 特殊展柜<i/>
+
+      <hr />
+
+      <i>公众号推荐<i/>
+    </div> -->
+  </div>
+</div>
+
+{{> footer}}
