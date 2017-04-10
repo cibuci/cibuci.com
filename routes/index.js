@@ -2,7 +2,7 @@ var router = require('koa-router')();
 
 router.get('/', async function (ctx, next) {
   ctx.state = {
-    title: 'koa2 title',
+    currentNav: 'home',
     list: [
       {
         title: '你的兴趣能谋生吗？',
