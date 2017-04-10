@@ -14,6 +14,10 @@ header {
       margin-top: ($navbar-height - $logo-height) / 2;
     }
   }
+
+  .navbar-default {
+    font-size: $font-size-middle;
+  }
 }
 
 .navbar-cbc {
