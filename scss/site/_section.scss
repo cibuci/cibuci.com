@@ -1,0 +1,29 @@
+.section {
+  margin: ($grid-gutter-width * 0.5) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: $grid-gutter-width * 1.5;
+  margin-bottom: $grid-gutter-width / 2;
+
+  h2 {
+    position: relative;
+    font-weight: 200;
+    padding-top: 60px;
+
+    &:before {
+      background-image: url(/images/TNY_lineart_sprite@2x.png);
+      background-size: auto 50px;
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -90px;
+      width: 182px;
+    }
+  }
+}
