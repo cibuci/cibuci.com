@@ -1,9 +1,29 @@
 @import "bootstrap-custom";
 
+$logo-height: 22px !default;
+
 header {
   border-bottom: 1px solid $gray-lighter;
+
+  .logo {
+    padding: 0;
+    margin-right: $grid-gutter-width;
+
+    img {
+      height: $logo-height;
+      margin-top: ($navbar-height - $logo-height) / 2;
+    }
+  }
 }
 
 .navbar-cbc {
   // margin-bottom: 0;
+}
+
+.banner {
+  .container {
+  }
+}
+
+footer {
 }
