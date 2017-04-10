@@ -1,40 +1,24 @@
 @import "bootstrap-custom";
 
-$logo-height: 22px !default;
+$grid-gutter-width: 30px;
 
 header {
   border-bottom: 1px solid $gray-lighter;
-
-  .logo {
-    padding: 0;
-    margin-right: $grid-gutter-width;
-
-    img {
-      height: $logo-height;
-      margin-top: ($navbar-height - $logo-height) / 2;
-    }
-  }
-
-  .navbar-default {
-    font-size: $font-size-middle;
-  }
 }
 
 footer {
   border-top: 1px solid $gray-lighter;
-  padding: $navbar-padding-horizontal 0;
 
   .copy {
     color: $gray-light;
   }
 
   ul.links {
-    margin: 0;
+    // margin: 0;
 
     li {
       a {
         color: $gray-light;
-        font-style: normal;
       }
     }
   }

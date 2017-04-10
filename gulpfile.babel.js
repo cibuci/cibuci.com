@@ -53,7 +53,7 @@ gulp.task('styles', () => {
     .pipe($.sass({
       precision: 10,
       includePaths: [
-        './public/components/bootstrap-sass/assets/stylesheets',
+        './public/components/bootstrap/scss',
       ]
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
