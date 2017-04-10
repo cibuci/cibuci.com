@@ -20,14 +20,22 @@ header {
   }
 }
 
-.navbar-cbc {
-  // margin-bottom: 0;
-}
-
-.banner {
-  .container {
-  }
-}
-
 footer {
+  border-top: 1px solid $gray-lighter;
+  padding: $navbar-padding-horizontal 0;
+
+  .copy {
+    color: $gray-light;
+  }
+
+  ul.links {
+    margin: 0;
+
+    li {
+      a {
+        color: $gray-light;
+        font-style: normal;
+      }
+    }
+  }
 }
