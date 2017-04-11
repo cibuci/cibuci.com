@@ -1,32 +1,6 @@
 @import "bootstrap-custom";
 
-$grid-gutter-width: 30px;
-
-header {
-  border-bottom: 1px solid $gray-lighter;
-}
-
-footer {
-  border-top: 1px solid $gray-lighter;
-
-  .copy {
-    color: $gray-light;
-  }
-
-  ul.links {
-    // margin: 0;
-
-    li {
-      a {
-        color: $gray-light;
-      }
-    }
-  }
-}
-
-.row {
-  margin-bottom: 1rem;
-}
-
+@import "site/layout";
 @import "site/section";
 @import "site/card";
+@import "site/button";

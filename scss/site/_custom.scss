@@ -3,10 +3,28 @@
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
 
-$brand-primary: #AA6708;
-$link-color: $brand-primary;
+$brand-primary:                      #AA6708;
+$link-color:                         $brand-primary;
 
 $font-family-sans-serif:  -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 $font-family-serif:       Georgia,Times New Roman,Times,Songti SC,serif;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family-base:        $font-family-sans-serif;
+
+$grid-columns:                       12;
+$grid-gutter-width-base:             16px;
+$grid-gutter-widths: (
+  xs: $grid-gutter-width-base,
+  sm: $grid-gutter-width-base,
+  md: $grid-gutter-width-base,
+  lg: $grid-gutter-width-base,
+  xl: $grid-gutter-width-base
+);
+
+$navbar-padding-x:                   0;
+
+$navbar-toggler-padding-x:           .45rem;
+$navbar-toggler-padding-y:           .15rem;
+$navbar-toggler-font-size:           $font-size-base;
+
+$nav-item-margin:                    .5rem;

@@ -4,10 +4,10 @@
 
 .section-title {
   text-align: center;
-  margin-top: $grid-gutter-width * 1.5;
-  margin-bottom: $grid-gutter-width / 2;
+  margin-top: $grid-gutter-width-base * 1.5;
+  margin-bottom: $grid-gutter-width-base / 2;
 
-  h2 {
+  h4 {
     position: relative;
     font-weight: 200;
     padding-top: 60px;
