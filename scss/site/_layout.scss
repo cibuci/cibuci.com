@@ -22,3 +22,18 @@ footer {
     }
   }
 }
+.cover-row {
+    position: relative;
+    min-height: 100px;
+}
+.profile-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.profile-pic {
+    width: auto;
+    height: 100%;
+}
