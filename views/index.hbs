@@ -1,31 +1,43 @@
 {{> header}}
 
-{{> section-title type='banner' title='特别展柜'}}
+<!-- {{> section-title type='banner' title='特别展柜'}} -->
 
 {{> banner}}
 
-{{> section-title type='article-lists' title='精选文章'}}
+<div class="container">
+  <hr />
+</div>
 
 <section class="section section-article">
   <div class="container">
+<!--
+    <nav class="nav">
+      <a class="nav-link active" href="#">全部</a>
+      <a class="nav-link" href="#">遇见·自己</a>
+      <a class="nav-link" href="#">种草·拔草</a>
+      <a class="nav-link" href="#">匠人·匠心</a>
+    </nav> -->
 
-    <ul class="list-inline list-unstyled">
-      <li class="list-inline-item">全部</li>
-      <li class="list-inline-item">遇见·自己</li>
-      <li class="list-inline-item">种草·拔草</li>
-      <li class="list-inline-item">匠人·匠心</li>
-    </ul>
+    <div class="row">
+      <div class="col-md-9">
 
-    <hr />
+        {{> section-title type='article-lists' title='精选文章'}}
 
-    <ul class="list-unstyled">
-      {{#each list}}
-        {{> card-home-article this}}
-      {{/each}}
-    </ul>
+        <div class="row">
+          {{#each list}}
+            <div class="col-md-4">
+              {{> card-home-article this}}
+            </div>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="col-md-3" style="border-left: 1px solid #f2f2f2;">
+
+      </div>
+    </div>
 
   </div>
 </section>
-
 
 {{> footer}}
