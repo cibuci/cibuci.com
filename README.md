@@ -11,4 +11,5 @@ use `koa-hbs@next`.
 ## Develop
 
 - `npm install`
+- `bower install`
 - `gulp`

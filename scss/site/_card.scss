@@ -1,0 +1,16 @@
+.card {
+  border: none;
+}
+
+.card-home-article {
+
+  h5 {
+    font-weight: 400;
+  }
+
+  p {
+    color: $gray-light;
+    font-weight: 200;
+    font-size: $font-size-sm;
+  }
+}

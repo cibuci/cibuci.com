@@ -8,6 +8,8 @@ const logger = require('koa-logger');
 
 const index = require('./routes/index');
 const users = require('./routes/users');
+const articles = require('./routes/articles');
+const events = require('./routes/events');
 
 // error handler
 onerror(app);
@@ -21,6 +23,8 @@ app.use(require('koa-static')(__dirname + '/public'));
 app.use(hbs.middleware({
   viewPath: __dirname + '/views',
   partialsPath: __dirname + '/views/partials',
+  layoutsPath: __dirname + '/views/layouts',
+  defaultLayout: 'default',
   templateOptions: {
     helpers: require('handlebars-helpers')()
   },
@@ -38,5 +42,7 @@ app.use(async (ctx, next) => {
 // routes
 app.use(index.routes(), index.allowedMethods());
 app.use(users.routes(), users.allowedMethods());
+app.use(articles.routes(), articles.allowedMethods());
+app.use(events.routes(), events.allowedMethods());
 
 module.exports = app;

@@ -51,7 +51,10 @@ gulp.task('styles', () => {
   ])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
-      precision: 10
+      precision: 10,
+      includePaths: [
+        './public/components/bootstrap/scss',
+      ]
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     // Concatenate and minify styles

@@ -1,0 +1,24 @@
+.section {
+  margin: $grid-gutter-width-base 0;
+}
+
+.section-title {
+  h3 {
+    position: relative;
+    font-weight: 200;
+    padding-left: 120px;
+
+    &:before {
+      background-image: url(/images/TNY_lineart_sprite@2x.png);
+      background-size: auto 30px;
+      background-repeat: no-repeat;
+      content: "";
+      display: block;
+      height: 30px;
+      position: absolute;
+      left: 0;
+      top: -2px;
+      width: 110px;
+    }
+  }
+}

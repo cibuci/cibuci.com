@@ -1,0 +1,40 @@
+
+header {
+  border-bottom: 1px solid $gray-lighter;
+  background-color: white;
+}
+
+footer {
+  border-top: 1px solid $gray-lighter;
+  font-size: $font-size-sm;
+  padding: $spacer;
+
+  .copy {
+    color: $gray-light;
+  }
+
+  ul.links {
+    margin: 0;
+
+    li {
+      a {
+        color: $gray-light;
+      }
+    }
+  }
+}
+.cover-row {
+    position: relative;
+    min-height: 100px;
+}
+.profile-wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.profile-pic {
+    width: auto;
+    height: 100%;
+}
