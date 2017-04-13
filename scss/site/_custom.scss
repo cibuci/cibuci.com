@@ -4,7 +4,11 @@
 // without modifying source files.
 
 $brand-primary:                      #AA6708;
+
 $link-color:                         $brand-primary;
+$link-decoration:                    none;
+$link-hover-color:                   darken($link-color, 25%);
+$link-hover-decoration:              underline;
 
 $font-family-sans-serif:  -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 $font-family-serif:       Georgia,Times New Roman,Times,Songti SC,serif;
@@ -22,7 +26,27 @@ $grid-gutter-widths: (
 );
 
 $navbar-padding-x:                   0;
+$navbar-padding-y:                   0;
 
 $navbar-toggler-padding-x:           .45rem;
 $navbar-toggler-padding-y:           .15rem;
 $navbar-toggler-font-size:           $font-size-base;
+
+$navbar-light-color:                $gray-light;
+$navbar-light-hover-color:          darken($brand-primary, 25%);
+$navbar-light-active-color:         $brand-primary;
+$navbar-light-disabled-color:       rgba($black,.3) !default;
+$navbar-light-toggler-bg: str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-light-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"), "#", "%23") !default;
+$navbar-light-toggler-border:       rgba($black,.1) !default;
+
+$btn-primary-color:              $white;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             $btn-primary-bg;
+
+$btn-secondary-color:            $gray-dark !default;
+$btn-secondary-bg:               $white !default;
+$btn-secondary-border:           #ccc !default;
+
+
+// Cibuci Self
+$cbc-transform-base:                 all 0.5s ease;

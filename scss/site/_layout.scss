@@ -1,7 +1,26 @@
 
 header {
-  border-bottom: 1px solid $gray-lighter;
+  border-bottom: 1px solid $gray-lightest;
   background-color: white;
+  font-size: $font-size-sm;
+
+  .logo {
+    padding: 0 $spacer;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      padding: ($spacer / 1.2);
+
+      &:hover {
+        background-color: $gray-lighter;
+      }
+    }
+  }
+
+  .btn {
+    font-size: $font-size-sm;
+  }
 }
 
 footer {

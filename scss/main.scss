@@ -1,14 +1,8 @@
 @import "bootstrap-custom";
 
+@import "site/helper";
 @import "site/layout";
 @import "site/section";
 @import "site/card";
 @import "site/button";
-
-.icon {
-       width: 1.2em;
-       height: 1.2em;
-       vertical-align: -0.25em;
-       fill: currentColor;
-       overflow: hidden;
-    }
+@import "site/effect";
