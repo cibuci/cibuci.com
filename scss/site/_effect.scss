@@ -1,0 +1,8 @@
+img.e-scale {
+  transition: $cbc-transform-base;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: $cbc-transform-base;
+  }
+}
