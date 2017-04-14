@@ -10,7 +10,7 @@ router.get('/', async function (ctx, next) {
     }
   };
 
-  await ctx.render('events', {
+  await ctx.render('articles', {
 
   });
 });

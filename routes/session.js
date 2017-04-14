@@ -2,12 +2,16 @@ var router = require('koa-router')();
 
 router.prefix('/session');
 
-router.get('/signin', function (ctx, next) {
-
+router.get('/signin', async function (ctx, next) {
+  await ctx.render('signin', {
+    layout: 'single'
+  });
 });
 
-router.get('/signup', function (ctx, next) {
-
+router.get('/signup', async function (ctx, next) {
+  await ctx.render('signup', {
+    layout: 'single'
+  });
 });
 
 module.exports = router;

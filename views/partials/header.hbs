@@ -14,12 +14,15 @@
           <li class="nav-item {{#is currentNav 'home'}}active{{/is}}">
             <a class="nav-link" href="/">{{> icon '#cbc-tijikongjian-xianxing'}}首页 <span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item {{#is currentNav 'topics'}}active{{/is}}">
+            <a class="nav-link" href="/topics">{{> icon '#cbc-tuodiantu'}}话题</a>
+          </li>
           <li class="nav-item {{#is currentNav 'articles'}}active{{/is}}">
             <a class="nav-link" href="/articles">{{> icon '#cbc-xinwenzixun-xianxing'}}文章 <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item {{#is currentNav 'events'}}active{{/is}}">
-            <a class="nav-link" href="/events">{{> icon '#cbc-tuodiantu'}}活动</a>
-          </li>
+          <!-- <li class="nav-item {{#is currentNav 'meetups'}}active{{/is}}">
+            <a class="nav-link" href="/meetups">{{> icon '#cbc-tuodiantu'}}遇见</a>
+          </li> -->
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
@@ -40,4 +43,4 @@
 </header>
 
 <!-- Space -->
-<div class="pt-5 pb-2"></div>
+<div class="pt-5"></div>
