@@ -1,5 +1,5 @@
 <header class="fixed-top">
-  <div class="container">
+  <div class="container-fluid">
     <nav class="navbar navbar-toggleable-md navbar-light">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,32 +12,44 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item {{#is currentNav 'home'}}active{{/is}}">
-            <a class="nav-link" href="/">{{> icon '#cbc-tijikongjian-xianxing'}}首页 <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">{{> icon '#cbc-tijikongjian-xianxing'}}首页</a>
           </li>
-          <li class="nav-item {{#is currentNav 'articles'}}active{{/is}}">
-            <a class="nav-link" href="/articles">{{> icon '#cbc-xinwenzixun-xianxing'}}文章 <span class="sr-only">(current)</span></a>
+          <li class="nav-item {{#is currentNav 'pk'}}active{{/is}}">
+            <a class="nav-link" href="/pk">{{> icon '#cbc-hezuoguanxi-xianxing'}}PK</a>
           </li>
-          <li class="nav-item {{#is currentNav 'events'}}active{{/is}}">
-            <a class="nav-link" href="/events">{{> icon '#cbc-tuodiantu'}}活动</a>
+          <li class="nav-item {{#is currentNav 'topic'}}active{{/is}}">
+            <a class="nav-link" href="/topic">{{> icon '#cbc-tuodiantu'}}话题</a>
           </li>
+          <li class="nav-item {{#is currentNav 'post'}}active{{/is}}">
+            <a class="nav-link" href="/post">{{> icon '#cbc-xinwenzixun-xianxing'}}文章</a>
+          </li>
+          <!-- <li class="nav-item {{#is currentNav 'meetups'}}active{{/is}}">
+            <a class="nav-link" href="/meetups">{{> icon '#cbc-tuodiantu'}}遇见</a>
+          </li> -->
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form> -->
 
-        <ul class="nav">
-          <li class="nav-item align-self-center">
-            <a class="nav-link btn btn-cbc-light" href="/session/signin">登录</a>
-          </li>
-          <li class="nav-item align-self-center">
-            <a class="nav-link btn btn-primary" href="/session/signup">注册</a>
-          </li>
-        </ul>
+        {{#if currentUser}}
+          欢迎你：{{currentUser.email}}
+          <a href="/signout">登出</a>
+        {{else}}
+          <ul class="nav">
+            <li class="nav-item align-self-center">
+              <a class="nav-link btn btn-cbc-light" href="/signin">登录</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link btn btn-primary" href="/signup">注册</a>
+            </li>
+          </ul>
+        {{/if}}
+
       </div>
     </nav>
   </div>
 </header>
 
 <!-- Space -->
-<div class="pt-5 pb-2"></div>
+<div class="pt-5"></div>

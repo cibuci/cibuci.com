@@ -1,16 +1,14 @@
 var router = require('koa-router')();
 
-router.prefix('/events');
+router.prefix('/post');
 
 router.get('/', async function (ctx, next) {
-  ctx.state = {
-    currentNav: 'events',
-    page: {
-      title: '活动'
-    }
+  ctx.state.currentNav = 'post';
+  ctx.state.page = {
+    title: '文章'
   };
 
-  await ctx.render('events', {
+  await ctx.render('post', {
 
   });
 });

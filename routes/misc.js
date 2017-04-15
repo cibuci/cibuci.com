@@ -18,4 +18,7 @@ router.get('/feedback', async function (ctx, next) {
   });
 });
 
+router.redirect('/login', '/session/signin');
+router.redirect('/register', '/session/signup');
+
 module.exports = router;

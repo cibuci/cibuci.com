@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 
+// As early as possible in your application, require and configure dotenv.
+require('dotenv').config();
+
 /**
  * Module dependencies.
  */
 
 var app = require('../app');
-var debug = require('debug')('demo:server');
+var debug = require('debug')('www');
 var http = require('http');
 
 /**
