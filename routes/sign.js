@@ -13,6 +13,12 @@ router.get('/signup', async function (ctx) {
   await ctx.render('signup', { layout: 'single' });
 });
 
+router.get('/signout', function (ctx) {
+  // destory session.
+  ctx.session = null;
+  ctx.redirect('/');
+});
+
 router.post('/signin', async function (ctx, next) {
   var body = ctx.request.body;
 
@@ -37,7 +43,7 @@ router.post('/signin', async function (ctx, next) {
   if(isMatch) {
     debug(`LOL: user(${user.email}) sign suesscess.`);
 
-    
+    ctx.session.user = user;
 
     var refer = ctx.session._signinReferer || '/';
     ctx.redirect(refer);

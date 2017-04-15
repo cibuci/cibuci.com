@@ -3,6 +3,7 @@ var router = require('koa-router')();
 router.get('/', async function (ctx, next) {
   ctx.state = {
     currentNav: 'home',
+    currentUser: ctx.session.user,
     list: [
       {
         title: '你的兴趣能谋生吗？',
