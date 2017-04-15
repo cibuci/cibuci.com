@@ -9,11 +9,13 @@ const session = require('koa-generic-session');
 const MongoStore = require('koa-generic-session-mongo');
 
 const index = require('./routes/index');
-const users = require('./routes/users');
-const articles = require('./routes/articles');
-const meetups = require('./routes/meetups');
+const user = require('./routes/user');
+const post = require('./routes/post');
 const sign = require('./routes/sign');
 const misc = require('./routes/misc');
+const pk = require('./routes/pk');
+const topic = require('./routes/topic');
+const meetup = require('./routes/meetup');
 
 // error handler
 onerror(app);
@@ -51,12 +53,22 @@ app.use(session({
   })
 }));
 
+// insert some state for render
+app.use(async (ctx, next) => {
+  ctx.state = ctx.state || {};
+  ctx.state.currentUser = ctx.session.user;
+
+  await next();
+});
+
 // routes
 app.use(index.routes(), index.allowedMethods());
-app.use(users.routes(), users.allowedMethods());
-app.use(articles.routes(), articles.allowedMethods());
-app.use(meetups.routes(), meetups.allowedMethods());
+app.use(user.routes(), user.allowedMethods());
+app.use(post.routes(), post.allowedMethods());
+app.use(meetup.routes(), meetup.allowedMethods());
 app.use(sign.routes(), sign.allowedMethods());
 app.use(misc.routes(), misc.allowedMethods());
+app.use(pk.routes(), pk.allowedMethods());
+app.use(topic.routes(), topic.allowedMethods());
 
 module.exports = app;

@@ -1,18 +1,14 @@
 var router = require('koa-router')();
 
-router.prefix('/articles');
+router.prefix('/pk');
 
 router.get('/', async function (ctx, next) {
-  ctx.state = {
-    currentNav: 'articles',
-    page: {
-      title: '文章'
-    }
+  ctx.state.currentNav = 'pk';
+  ctx.state.page = {
+    title: 'PK'
   };
 
-  await ctx.render('articles', {
-
-  });
+  await ctx.render('pk');
 });
 
 router.get('/bar', function (ctx, next) {

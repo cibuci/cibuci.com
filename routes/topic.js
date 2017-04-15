@@ -1,16 +1,14 @@
 var router = require('koa-router')();
 
-router.prefix('/meetups');
+router.prefix('/topic');
 
 router.get('/', async function (ctx, next) {
-  ctx.state = {
-    currentNav: 'meetups',
-    page: {
-      title: '聚会'
-    }
+  ctx.state.currentNav = 'topic';
+  ctx.state.page = {
+    title: '话题'
   };
 
-  await ctx.render('meetups', {
+  await ctx.render('topic', {
 
   });
 });

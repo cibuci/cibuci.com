@@ -12,13 +12,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item {{#is currentNav 'home'}}active{{/is}}">
-            <a class="nav-link" href="/">{{> icon '#cbc-tijikongjian-xianxing'}}首页 <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">{{> icon '#cbc-tijikongjian-xianxing'}}首页</a>
           </li>
-          <li class="nav-item {{#is currentNav 'topics'}}active{{/is}}">
-            <a class="nav-link" href="/topics">{{> icon '#cbc-tuodiantu'}}话题</a>
+          <li class="nav-item {{#is currentNav 'pk'}}active{{/is}}">
+            <a class="nav-link" href="/pk">{{> icon '#cbc-hezuoguanxi-xianxing'}}PK</a>
           </li>
-          <li class="nav-item {{#is currentNav 'articles'}}active{{/is}}">
-            <a class="nav-link" href="/articles">{{> icon '#cbc-xinwenzixun-xianxing'}}文章 <span class="sr-only">(current)</span></a>
+          <li class="nav-item {{#is currentNav 'topic'}}active{{/is}}">
+            <a class="nav-link" href="/topic">{{> icon '#cbc-tuodiantu'}}话题</a>
+          </li>
+          <li class="nav-item {{#is currentNav 'post'}}active{{/is}}">
+            <a class="nav-link" href="/post">{{> icon '#cbc-xinwenzixun-xianxing'}}文章</a>
           </li>
           <!-- <li class="nav-item {{#is currentNav 'meetups'}}active{{/is}}">
             <a class="nav-link" href="/meetups">{{> icon '#cbc-tuodiantu'}}遇见</a>
