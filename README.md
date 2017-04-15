@@ -11,7 +11,13 @@ use [mongoose](http://mongoosejs.com/) connect mongodb.
 ## Contribute
 
 - add an `.env` file under root dir, you can find an example here:
-  
+
+  ```
+  PORT=9000
+  DB_HOST=localhost
+  DB_NAME=cibuci
+  ```
+
 - `npm install`
 - `bower install`
 - `gulp`
