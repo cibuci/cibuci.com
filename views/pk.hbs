@@ -1,5 +1,49 @@
-{{> header}}
+<div class="app-container">
+  <aside class="app-menu-container">
+    {{> header}}
+  </aside>
+  <div class="app-content has-app-menu">
 
-events
+    <header class="app-content-header">
+      <nav class="nav">
+  <div class="nav-left">
+    <h1>你的兴趣能谋生吗？</h1>
+  </div>
 
-{{> footer}}
+  <div class="nav-center">
+    <a class="nav-item">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+    </a>
+    <a class="nav-item">
+      <span class="icon">
+        <i class="fa fa-twitter"></i>
+      </span>
+    </a>
+  </div>
+
+  <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+  <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+  <span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </span>
+
+  <!-- This "nav-menu" is hidden on mobile -->
+  <!-- Add the modifier "is-active" to display it on mobile -->
+  <div class="nav-right nav-menu">
+    <a class="nav-item is-tab">
+        <figure class="image is-16x16" style="margin-right: 8px;">
+          <img src="http://bulma.io/images/jgthms.png">
+        </figure>
+        Profile
+      </a>
+      <a class="nav-item is-tab">Log out</a>
+  </div>
+</nav>
+    </header>
+
+  </div>
+</div>

@@ -48,13 +48,15 @@ gulp.task('styles', () => {
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
     'scss/site.scss',
-    'scss/single.scss'
+    'scss/single.scss',
+    'scss/main.scss'
   ])
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       precision: 10,
       includePaths: [
         './public/components/bootstrap/scss',
+        './node_modules/bulma/'
       ]
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))

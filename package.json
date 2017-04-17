@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "bulma": "^0.4.0",
     "debug": "^2.6.3",
     "dotenv": "^4.0.0",
     "handlebars": "^4.0.6",

@@ -8,7 +8,7 @@ router.get('/', async function (ctx, next) {
     title: 'PK'
   };
 
-  await ctx.render('pk');
+  await ctx.render('pk', { layout: 'fluid' });
 });
 
 router.get('/bar', function (ctx, next) {
